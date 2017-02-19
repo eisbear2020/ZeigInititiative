@@ -1,0 +1,58 @@
+/**
+ * Place your custom styles here.
+ */
+
+/* Admin Backend */
+#admin-menu{z-index: 9999; }
+
+
+/*Page*/
+.views-field-field-logo{padding-bottom:1em;}
+
+/*Initiativen*/
+.node--type-initiativen .field--name-field-kurzbeschreibung .field--label {font-size: 20pt;}
+.node--type-initiativen .field--name-field-kurzbeschreibung {padding-top: 1em; padding-bottom: 1em;}
+.node--type-initiativen .group-header{padding-bottom: 1em;}
+.node--type-initiativen .field--name-field-unser-team .field--label {font-size: 20pt;}
+.node--type-initiativen .field--name-field-taetigkeitsbereich-der-ini .field--label {font-size: 20pt;}
+.node--type-initiativen .field--name-field-taetigkeitsbereich-der-ini .field__items {font-size: 14pt;}
+
+/*Benutzer compact*/
+.user--view-mode-compact .field--name-username h2{font-size: 14pt;}
+
+/*Benutzer full view*/
+.user--view-mode-full .field--name-username{padding-left: 1em;}
+.user--view-mode-full .field--name-field-ub{padding-bottom: 1em;}
+.user--view-mode-full .field--name-field-int{padding-bottom: 1em;}
+.user--view-mode-full .field--name-field-das-bringe-ich-mit-{padding-bottom: 1em;}
+.user--view-mode-full .field--name-field-mein-zeitlicher-rahmen-{padding-bottom: 1em;}
+.user--view-mode-full .field--name-field-zeit-die-ich-investieren-w{padding-bottom: 1em;}
+.user--view-mode-full .field--name-field-mochte-initiativen-unterst{padding-bottom: 1em;}
+
+/*Neue Initiativen*/
+.neue_initiativen_block{ padding-left: 0.5em;padding-right: 0.5em;}
+
+/*Freiwillige des Monats*/
+.neue_freiwillige_block{ padding-left: 0.5em;padding-right: 0.5em; margin-top:2em;}
+
+
+
+/*Neue Freiwillige*/
+.neue_freiwillige_block{ padding-left: 0.5em;padding-right: 0.5em; margin-top:2em;}
+
+/*Front page*/
+.region-sidebar-second{padding-top:0em;}
+
+/*nav bar*/
+.navbar{background-color: transparent;border:none;border-bottom: solid 2px;border-radius: 0px; border-top: solid 2px}
+
+.navbar-inverse .navbar-nav li a:hover{
+  color: black; /* Changes toggle color on hover */
+}
+
+.navbar-inverse .navbar-nav li a:hover{
+  color: black;/* Changes toggle color on hover */
+}
+
+.navbar-inverse .navbar-nav > .active > a{background:transparent; color:black;}
+.navbar-inverse .navbar-nav > .active > a:hover{background:transparent; color:black;}

@@ -1,0 +1,6 @@
+my_empty_front_page.content:
+	path '/empty'
+	defaults:
+		_controller: '\Drupal\my_empty_front_page\Controller\MyEmptyFrontPageController::emptyContent'
+		requirements:
+			_permission: 'access content'
