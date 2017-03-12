@@ -3,3 +3,4 @@ global-styling:
     theme:
       css/overrides.min.css: {}
       css/style.css: {}
+      'https://fonts.googleapis.com/css?family=Amatic+SC:700|Amatica+SC|Bahiana|Dorsa|Laila|Pompiere|Tenali+Ramakrishna|Text+Me+One|Wire+One': { type: external, minified: true }
