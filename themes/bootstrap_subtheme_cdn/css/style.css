@@ -7,6 +7,11 @@
 
 /*Page*/
 .views-field-field-logo{padding-bottom:1em;}
+/*Upper case for all headings*/
+.fontyourface h2 {
+text-transform: uppercase;
+}
+
 
 
 /*Front page*/
@@ -79,6 +84,20 @@ margin-left: 3.9em;
   margin-top: -2em;
 }
 
+/*Darstellung Initiative*/
+.field--name-field-kurzbeschreibung{
+  width:80%;
+}
+
+.field--name-field-taetigkeitsbereich-der-ini .field--label{
+  font-family: 'Pompiere', cursive;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.field--name-field-taetigkeitsbereich-der-ini .field--item{
+  font-weight: 500;
+  font-size: 12pt;
+}
 
 /*Offene Stellen*/
 .jetzt-helfen .views-field-field-zu-investierende-zeit{padding-top: 0.5em;}
@@ -92,6 +111,7 @@ margin-left: 3.9em;
 .alle-initiativen .field-content a{
   color: #33CCCC;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /*Initiativen Detaildarstellung*/
