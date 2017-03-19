@@ -85,20 +85,6 @@ margin-left: 3.9em;
   margin-top: -2em;
 }
 
-/*Darstellung Initiative*/
-.field--name-field-kurzbeschreibung{
-  width:80%;
-}
-
-.field--name-field-taetigkeitsbereich-der-ini .field--label{
-  font-family: 'Pompiere', cursive;
-  text-transform: uppercase;
-  font-weight: 200;
-}
-.field--name-field-taetigkeitsbereich-der-ini .field--item{
-  font-weight: 500;
-  font-size: 12pt;
-}
 
 /*Offene Stellen*/
 .jetzt-helfen .views-field-field-zu-investierende-zeit{padding-top: 0.5em;}
@@ -115,13 +101,60 @@ margin-left: 3.9em;
   text-transform: uppercase;
 }
 
+.alle-initiativen .desc p{
+  margin-top: 0.5em;
+}
+
+
 /*Initiativen Detaildarstellung*/
-.node--type-initiativen .field--name-field-kurzbeschreibung .field--label {font-size: 20pt;}
+.field--name-field-kurzbeschreibung{
+  width:80%;
+}
+
+.field--name-field-website .field--label{
+  font-size: 18pt;
+  font-family: 'Pompiere', cursive;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.field--name-field-website .field--item{
+  margin-top: 0.7em;
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+.field--name-field-taetigkeitsbereich-der-ini .field--label{
+  font-size: 18pt;
+  margin-top: 0.7em;
+  font-family: 'Pompiere', cursive;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.field--name-field-taetigkeitsbereich-der-ini .field--item{
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+.initiativen-tabs{
+  margin-top: 2em;
+  width:80%;
+}
+
+.initiativen-tabs {
+  font-size: 16pt;
+  font-family: 'Pompiere', cursive;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.field--name-field-weitere-bilder .field--item{
+  margin-bottom: 0.5em;
+}
+
 .node--type-initiativen .field--name-field-kurzbeschreibung {padding-top: 1em; padding-bottom: 1em;}
 .node--type-initiativen .group-header{padding-bottom: 1em;}
-.node--type-initiativen .field--name-field-unser-team .field--label {font-size: 20pt;}
-.node--type-initiativen .field--name-field-taetigkeitsbereich-der-ini .field--label {font-size: 20pt;}
-.node--type-initiativen .field--name-field-taetigkeitsbereich-der-ini .field__items {font-size: 14pt;}
+
 
 /*Benutzer compact*/
 .user--view-mode-compact .field--name-username h2{font-size: 14pt;}
