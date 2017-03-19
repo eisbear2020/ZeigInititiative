@@ -10,6 +10,7 @@
 /*Upper case for all headings*/
 .fontyourface h2 {
 text-transform: uppercase;
+font-family: 'Pompiere', cursive;
 }
 
 
