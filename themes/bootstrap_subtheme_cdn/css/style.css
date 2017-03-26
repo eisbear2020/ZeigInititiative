@@ -5,15 +5,20 @@
 /* Admin Backend */
 #admin-menu{z-index: 9999; }
 
-/*Page*/
-.views-field-field-logo{padding-bottom:1em;}
 /*Upper case for all headings*/
 .fontyourface h2 {
 text-transform: uppercase;
 font-family: 'Pompiere', cursive;
 }
 
+/*Front page carousel*/
+.carousel-caption h3{
+font-size: 27px;
+}
 
+.carousel-caption p{
+font-size: 15px;
+}
 
 /*Front page*/
 .region-sidebar-second{padding-top:0em;}
@@ -95,15 +100,18 @@ margin-left: 3.9em;
 }
 
 /*Alle Initiativen*/
+.alle-initiativen .views-col{padding-bottom:0.5em;}
+
 .alle-initiativen .field-content a{
   color: #33CCCC;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.alle-initiativen .desc p{
-  margin-top: 0.5em;
+.alle-initiativen h4{
+  text-transform: uppercase;
 }
+
 
 
 /*Initiativen Detaildarstellung*/
@@ -136,12 +144,9 @@ margin-left: 3.9em;
   font-size: 12pt;
 }
 
-.initiativen-tabs{
-  margin-top: 2em;
-  width:80%;
-}
-
 .initiativen-tabs {
+  padding-top: 1em;
+  width:80%;
   font-size: 16pt;
   font-family: 'Pompiere', cursive;
   text-transform: uppercase;
