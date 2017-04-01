@@ -186,18 +186,6 @@
         {% endblock %}
 
 
-      {# 2_Articles #}
-        {% if page.center_left %}
-          {% block center_left %}
-            <div class="col-md-6">{{ page.center_left }}</div>
-           {% endblock %}
-        {% endif %}
-      {% if page.center_right %}
-        {% block center_right %}
-          <div class="col-md-6">{{ page.center_right }}</div>
-        {% endblock %}
-      {% endif %}
-
       {# bottom_long #}
         {% if page.bottom_long %}
           {% block bottom_long %}
@@ -224,10 +212,21 @@
   </div>
 {% endblock %}
 
-{% if page.footer %}
+{% if page.footer or page.footer_left or page.footer_right %}
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
       {{ page.footer }}
+      {% if page.footer_left %}
+          {% block footer_left %}
+            <div class="col-md-4">{{ page.footer_left }}</div>
+           {% endblock %}
+        {% endif %}
+      {% if page.footer_right %}
+        {% block footer_right %}
+          <div class="col-md-8">{{ page.footer_right }}</div>
+        {% endblock %}
+      {% endif %}
+
     </footer>
   {% endblock %}
 {% endif %}

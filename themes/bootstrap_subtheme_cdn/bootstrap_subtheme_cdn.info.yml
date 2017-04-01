@@ -19,8 +19,8 @@ regions:
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
-  center_left: 'Center left'
-  center_right: 'Center right'
+  footer_left: 'Footer left'
+  footer_right: 'Footer right'
   bottom_long: 'Bottom long'
 
 libraries:

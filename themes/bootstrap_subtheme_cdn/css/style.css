@@ -80,6 +80,21 @@ margin-top: 2.3em;
 margin-left: 3.9em;
 }
 
+/*Footer*/
+.footer {background-color: transparent;border:none;border-top: solid 2px black}
+
+.footer a{
+background:transparent;
+color: black;
+}
+
+#block-views-block-partner-block-1 h2{
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 1em;
+text-transform: none;
+margin-bottom: 1em;
+}
+
 /*Initiativen nach Tätigkeitsbereich region*/
 .views-field-field-bil{padding-right:0.5em;
                        padding-bottom:0.5em;}
@@ -119,7 +134,28 @@ margin-left: 3.9em;
   width:80%;
 }
 
+.field--name-field-mitglied-netzwerk-der-zivi {
+  font-weight: 300;
+  font-size: 12pt;
+  color: #339995;
+}
+
+.field--name-field-email .field--label{
+  font-size: 18pt;
+  font-family: 'Pompiere', cursive;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.field--name-field-email .field--item{
+  margin-top: 0.7em;
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+
 .field--name-field-website .field--label{
+  margin-top: 0.7em;
   font-size: 18pt;
   font-family: 'Pompiere', cursive;
   text-transform: uppercase;
@@ -134,7 +170,6 @@ margin-left: 3.9em;
 
 .field--name-field-taetigkeitsbereich-der-ini .field--label{
   font-size: 18pt;
-  margin-top: 0.7em;
   font-family: 'Pompiere', cursive;
   text-transform: uppercase;
   font-weight: 200;
@@ -153,6 +188,12 @@ margin-left: 3.9em;
   font-weight: 400;
 }
 
+
+
+
+
+
+
 .field--name-field-weitere-bilder .field--item{
   margin-bottom: 0.5em;
 }
@@ -160,6 +201,15 @@ margin-left: 3.9em;
 .node--type-initiativen .field--name-field-kurzbeschreibung {padding-top: 1em; padding-bottom: 1em;}
 .node--type-initiativen .group-header{padding-bottom: 1em;}
 
+
+#block-views-block-jetzt-helfen-block-2 h2{
+  font-size: 18pt;
+  margin-top: 1em;
+  margin-bottom: -0.3em;
+  font-family: 'Pompiere', cursive;
+  text-transform: uppercase;
+  font-weight: 200;
+}
 
 /*Benutzer compact*/
 .user--view-mode-compact .field--name-username h2{font-size: 14pt;}
