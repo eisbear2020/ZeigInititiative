@@ -105,6 +105,51 @@ margin-bottom: 1em;
   margin-top: -2em;
 }
 
+.image-hover{
+ position:relative;
+}
+
+.image-background {
+  opacity: 1;
+  display: block;
+  width: 99%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding-bottom: 3px;
+}
+
+.taet-title {
+  position: absolute;
+  width: 95%;
+  text-align: center;
+  top: 45%;
+  right: 0;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.taet-title a{
+  color: black;
+  text-decoration: none;
+  transition: .5s ease;
+  font-size: 1.8vw;
+}
+
+.taet-title:hover a{
+  color: white;
+}
+
+.image-background:hover {
+  opacity: 0.3;
+}
+
+.image-hover:hover .taet-title {
+  opacity: 1;
+}
+
 
 /*Offene Stellen*/
 .jetzt-helfen .views-field-field-zu-investierende-zeit{padding-top: 0.5em;}
