@@ -127,28 +127,29 @@ margin-bottom: 1em;
   right: 0;
   left: 0;
   transform: translateY(-50%);
-  opacity: 0;
+  opacity: 1;
   transition: .5s ease;
 }
 
 .taet-title a{
-  color: black;
+  color: white;
   text-decoration: none;
   transition: .5s ease;
   font-size: 1.8vw;
 }
 
-.taet-title:hover a{
-  color: white;
-}
-
-.image-background:hover {
-  opacity: 0.3;
-}
-
 .image-hover:hover .taet-title {
   opacity: 1;
 }
+
+.image-hover:hover .taet-title a{
+  color: black;
+}
+
+.image-hover:hover .image-background{
+  opacity: 0.3;
+}
+
 
 
 /*Offene Stellen*/
