@@ -1,5 +1,0 @@
-name: Custom_registration
-type: module
-description: Module that defines registration form
-core: 8.x
-package: Custom
