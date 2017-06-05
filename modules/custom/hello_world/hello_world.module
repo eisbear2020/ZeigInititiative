@@ -1,0 +1,35 @@
+<?php
+use Drupal\Core\Form\FormStateInterface;
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function hello_world_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+  $form['phone_number']['#description'] = t('OMG');
+  $form['title']['#size'] = 5;
+  if ($form_id == 'node_offene_stellen_form') {
+    $form['body_field']['body']['#title'] = "My Custom Body Label";
+  }
+}
+
+
+/**
+ * Form alter for creation of "offene Stelle"
+ */
+function hello_world_form_node_offene_stellen_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  //drupal_set_message('test1');
+  //$form['field_initiative']['#disabled']= TRUE;
+  //$form['field_beschreibung_stelle']['#title'] = t('Beschreibung');
+  $form['revision_information']['#access'] = FALSE;
+  $form['field_beschreibung_stelle']['#title'] = 'OMG';
+  //$form['field_beschreibung']['#type'] = 'textarea';
+  // Modification for the form with the given form ID goes here. For example, if
+  // FORM_ID is "user_register_form" this code would run only on the user
+  // registration form.
+
+  // Add a checkbox to registration form about agreeing to terms of use.
+  //$form['terms_of_use'] = [
+  //  '#type' => 'checkbox',
+  //  '#title' => t("I agree with the website's terms and conditions."),
+  //  '#required' => TRUE,
+  //];
+}
