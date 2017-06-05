@@ -155,8 +155,11 @@ margin-bottom: 1em;
 
 
 /*Offene Stellen*/
+.jetzt-helfen a{font-weight: 500;
+font-size: 1.1em;}
 .jetzt-helfen .views-col{padding-right: 0.5em;}
 .jetzt-helfen .views-field-field-zu-investierende-zeit{padding-top: 0.5em;}
+.jetzt-helfen .views-field-field-zu-investierende-zeit{font-weight: 500;}
 .jetzt-helfen .views-field-title{padding-top: 1em;}
 .jetzt-helfen .field-content a{
   color: #33CCCC;
@@ -284,3 +287,12 @@ color: green;)
 
 /*Neue Freiwillige*/
 .neue_freiwillige_block{ padding-left: 0.5em;padding-right: 0.5em; margin-top:2em;}
+
+
+/*Offen Stellen Formular*/
+.description_formular_offene_stellen{
+  margin-bottom: 3em;}
+.description_formular_offene_stellen h3{
+  font-size: 2.5em;}
+
+
