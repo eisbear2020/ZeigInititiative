@@ -183,11 +183,13 @@ font-size: 1.1em;}
 
 /*Initiativen Detaildarstellung*/
 /* To do: Buttons*/
-.field--name-field-kurzbeschreibung{
-  width:80%;
+.field--name-field-beschreibung-initiative{
+  margin-top: 8pt;
+  width:100%;
 }
 
 .field--name-field-mitglied-netzwerk-der-zivi {
+  text-align: right;
   font-weight: 300;
   font-size: 12pt;
   color: #339995;
@@ -234,7 +236,7 @@ font-size: 1.1em;}
 
 .initiativen-tabs {
   padding-top: 1em;
-  width:80%;
+  width:100%;
   font-size: 16pt;
   font-family: 'Pompiere', cursive;
   text-transform: uppercase;
@@ -254,15 +256,39 @@ font-size: 1.1em;}
 .node--type-initiativen .field--name-field-kurzbeschreibung {padding-top: 1em; padding-bottom: 1em;}
 .node--type-initiativen .group-header{padding-bottom: 1em;}
 
+#block-views-block-jetzt-helfen-block-2{
+  margin-top: 30pt;
+}
 
 #block-views-block-jetzt-helfen-block-2 h2{
   font-size: 18pt;
-  margin-top: 1em;
   margin-bottom: -0.3em;
   font-family: 'Pompiere', cursive;
   text-transform: uppercase;
   font-weight: 200;
 }
+
+
+#block-views-block-unser-team-1-block-1 h2{
+  font-size: 18pt;
+  margin-top: 1em;
+  margin-bottom: -0.5em;
+  font-family: 'Pompiere', cursive;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+#block-views-block-unser-team-1-block-1 a{
+  color: #33CCCC;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12pt;
+  font-family: Helvetica,Arial,sans-serif;
+}
+
+
+
+
 
 /*Benutzer compact*/
 .user--view-mode-compact .field--name-username h2{font-size: 14pt;}
