@@ -1,0 +1,8 @@
+form_initia.content:
+  path: '/neue_initia'
+  defaults:
+    _controller: '\Drupal\form_initia\Controller\FormInitiaController::content'
+    _title: 'Helfer finden'
+  requirements:
+    _permission: 'access content'
+

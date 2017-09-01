@@ -1,0 +1,6 @@
+name: form_offene_stellen
+description: Creates page with form for offene Stellen
+package: Custom
+
+type: module
+core: 8.x

@@ -1,0 +1,8 @@
+form_offene_stellen.content:
+  path: '/neues_gesuch'
+  defaults:
+    _controller: '\Drupal\form_offene_stellen\Controller\OffeneStellenController::content'
+    _title: 'Helfer finden'
+  requirements:
+    _permission: 'access content'
+

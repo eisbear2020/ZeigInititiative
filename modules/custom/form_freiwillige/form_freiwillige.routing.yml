@@ -1,0 +1,7 @@
+form_freiwillige.content:
+  path: '/test1'
+  defaults:
+    _controller: '\Drupal\form_freiwillige\Controller\FormFreiwilligeController::content'
+    _title: 'Freiwilliges Engagement'
+  requirements:
+    _permission: 'access content'
