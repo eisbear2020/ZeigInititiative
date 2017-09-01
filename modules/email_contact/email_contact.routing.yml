@@ -1,0 +1,6 @@
+email_contact.form:
+  path: '/email-contact/{type}/{id}/{field_name}'
+  defaults:
+    _form: 'Drupal\email_contact\Form\ContactForm'
+  requirements:
+    _permission: 'access content'

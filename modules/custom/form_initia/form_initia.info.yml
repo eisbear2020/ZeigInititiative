@@ -1,0 +1,6 @@
+name: form_initia
+description: Creates page with form for initiatives
+package: Custom
+
+type: module
+core: 8.x

@@ -2,6 +2,19 @@
  * Place your custom styles here.
  */
 
+/* Overriding of bootstrap */
+.btn {
+    color: #fff;
+    background-color: #339995;
+    border-color: #2e6da4;
+}
+
+.btn:hover{
+    background-color: #339995;
+}
+
+
+
 /* Admin Backend */
 #admin-menu{z-index: 9999; }
 
@@ -79,6 +92,14 @@ position: absolute;
 margin-top: 2.3em;
 margin-left: 3.9em;
 }
+
+/*Helfer werden Formular*/
+.helfer_werden_formular{
+ padding: 1em;
+ border: solid;
+ border-width:thin
+}
+
 
 /*Footer*/
 /*To do: adjust layout*/
@@ -189,13 +210,21 @@ font-size: 1.1em;}
 }
 
 .field--name-field-mitglied-netzwerk-der-zivi {
-  text-align: right;
+  text-align: left;
   font-weight: 300;
   font-size: 12pt;
   color: #339995;
+  margin-bottom: 0.9em;
+  margin-top: 0.9em;
+}
+
+
+.field--name-field-ort{
+  margin-bottom: 0.7em;
 }
 
 .field--name-field-email .field--label{
+  margin-top: 0.7em;
   font-size: 18pt;
   font-family: 'Pompiere', cursive;
   text-transform: uppercase;
@@ -203,7 +232,6 @@ font-size: 1.1em;}
 }
 
 .field--name-field-email .field--item{
-  margin-top: 0.7em;
   font-weight: 500;
   font-size: 12pt;
 }
@@ -218,7 +246,6 @@ font-size: 1.1em;}
 }
 
 .field--name-field-website .field--item{
-  margin-top: 0.7em;
   font-weight: 500;
   font-size: 12pt;
 }
@@ -235,13 +262,14 @@ font-size: 1.1em;}
 }
 
 .initiativen-tabs {
-  padding-top: 1em;
+  margin-top: 1em;
   width:100%;
-  font-size: 16pt;
+  font-size: 18pt;
   font-family: 'Pompiere', cursive;
   text-transform: uppercase;
   font-weight: 400;
 }
+
 
 
 
@@ -256,11 +284,7 @@ font-size: 1.1em;}
 .node--type-initiativen .field--name-field-kurzbeschreibung {padding-top: 1em; padding-bottom: 1em;}
 .node--type-initiativen .group-header{padding-bottom: 1em;}
 
-#block-views-block-jetzt-helfen-block-2{
-  margin-top: 30pt;
-}
-
-#block-views-block-jetzt-helfen-block-2 h2{
+.block_wir_suchen h2{
   font-size: 18pt;
   margin-bottom: -0.3em;
   font-family: 'Pompiere', cursive;
@@ -269,29 +293,67 @@ font-size: 1.1em;}
 }
 
 
-#block-views-block-unser-team-1-block-1 h2{
-  font-size: 18pt;
+.block_unser_team{
+  margin-top: 3pt;
+}
+
+.fehlendes_team{
   margin-top: 1em;
-  margin-bottom: -0.5em;
+}
+
+.block_unser_team h2{
+  font-size: 18pt;
+  margin-bottom: -0.3em;
   font-family: 'Pompiere', cursive;
   text-transform: uppercase;
   font-weight: 200;
 }
 
-#block-views-block-unser-team-1-block-1 a{
+.block_unser_team h5{
   color: #33CCCC;
   text-decoration: none;
   font-weight: 500;
   font-size: 12pt;
   font-family: Helvetica,Arial,sans-serif;
+  margin-top: 1em;
 }
 
+/*Profil*/
+.profil_initiativen_link a{
+  color: #33CCCC;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
+.block_meine_initiative a{
+  text-decoration: none;
+}
+
+.block_meine_initiative h2{
+  font-size: 18pt;
+}
+
+.block_meine_offenen_gesuche h2{
+  font-size: 18pt;
+  margin-bottom: -0.3em;
+}
+
+.button_link_neues_gesuch{
+  margin-top: 1em;
+}
+
+/*.btn .btn-default .profil{
+  margin-top: 5em;
+}*/
 
 
 
 /*Benutzer compact*/
-.user--view-mode-compact .field--name-username h2{font-size: 14pt;}
+.user--view-mode-compact .field--name-username {
+  margin-top: 1em;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #33CCCC;;}
 
 /*Benutzer full view*/
 .user--view-mode-full .field--name-username{padding-left: 1em;}
@@ -316,9 +378,9 @@ color: green;)
 
 
 /*Offen Stellen Formular*/
-.description_formular_offene_stellen{
+.description_formular{
   margin-bottom: 3em;}
-.description_formular_offene_stellen h3{
+.description_formular h3{
   font-size: 2.5em;}
 
 

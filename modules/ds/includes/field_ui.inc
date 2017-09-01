@@ -242,7 +242,7 @@ function ds_field_ui_regions(array $form, FormStateInterface $form_state) {
       else {
         $region_default_value = $row['region']['#default_value'];
         $default = (isset($field_regions[$name]) && isset($region_options[$field_regions[$name]])) ? $field_regions[$name] : 'hidden';
-        if ($region_default_value == 'content') {
+        if ($region_default_value == 'content' && !isset($region_options['content'])) {
           $default = key($region_options);
         }
         $row['region']['#options'] = $region_options;
@@ -1114,6 +1114,9 @@ function _ds_field_ui_fields($entity_type, $bundle, $view_mode, array &$form, Fo
   }
 
   foreach ($fields as $key => $field) {
+    if (isset($field_settings[$key]['formatter'])) {
+      $field['formatter'] = $field_settings[$key]['formatter'];
+    }
     $configuration = [
       'field' => $field,
       'field_name' => $key,
