@@ -1,0 +1,6 @@
+name: form_contact_freiwillige
+description: Alters the form to contact Freiwillige
+package: Custom
+
+type: module
+core: 8.x

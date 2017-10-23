@@ -1,0 +1,24 @@
+<?php
+use Drupal\Core\Form\FormStateInterface;
+/**
+ * Form alter to add "Kontaktiert von Initiative" zu Freiwilligen node
+ */
+function contact_form_freiwillige_mail_alter(&$message) {
+  // get node id from path
+  $current_path = \Drupal::service('path.current')->getPath();
+  $path_array = explode ( "/" , $current_path);
+  $nr_elements_path_array = count($path_array);
+
+  if ($path_array[0] = 'email-contact' && $path_array[1] = 'freiwillige'){
+    $nid = $path_array[3];
+    if (node_load($nid)){
+      $node = node_load($nid);
+      $user = \Drupal::currentUser();
+      $id=$user->id();
+      $user = \Drupal\user\Entity\User::load($id);
+      $node->field_kontaktiert_von_initiative[] = $user->field_meine_in->entity;
+      $node->save();
+    }
+  }
+}
+
