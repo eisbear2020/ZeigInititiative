@@ -5,7 +5,10 @@
     "license": "GPL-2.0+",
     "require": {
         "composer/installers": "^1.0.24",
-        "wikimedia/composer-merge-plugin": "~1.4"
+        "wikimedia/composer-merge-plugin": "~1.4",
+        "drupal/address": "~1.0",
+        "drupal/geocoder": "^2.0@alpha",
+        "drupal/geophp": "^1.0@beta"
     },
     "replace": {
         "drupal/core": "~8.3"
