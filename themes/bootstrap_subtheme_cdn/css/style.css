@@ -243,13 +243,14 @@ font-size: 1.1em;}
   font-size: 12pt;
 }
 
+.field--name-field-email .field--item{
+  font-weight: 500;
+  font-size: 12pt;
+}
 
-.field--name-field-website .field--label{
-  margin-top: 0.7em;
-  font-size: 18pt;
-  font-family: 'Pompiere', cursive;
-  text-transform: uppercase;
-  font-weight: 200;
+
+.field--name-field-email{
+  margin-right: 0.8em;
 }
 
 .field--name-field-website .field--item{
