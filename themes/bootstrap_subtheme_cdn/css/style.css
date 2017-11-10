@@ -100,6 +100,18 @@ margin-top: 2.3em;
 margin-left: 3.9em;
 }
 
+/*Haupttext*/
+.haupttext{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*Initiativbewerbung*/
+.initiativbewerbung_beschreibung{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /*Helfer werden Formular*/
 .helfer_werden_formular{
  padding: 1em;
@@ -194,6 +206,14 @@ font-size: 1.1em;}
   text-decoration: none;
 }
 
+.views-field-field-beschreibung-offene-stelle{
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 1.5em;
+}
+
+
+
 /*Alle Initiativen*/
 .alle-initiativen .views-col{padding-bottom:0.5em;}
 
@@ -207,13 +227,19 @@ font-size: 1.1em;}
   text-transform: uppercase;
 }
 
-
+.kurzform-initiativenbeschreibung{
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 /*Initiativen Detaildarstellung*/
 /* To do: Buttons*/
 .field--name-field-beschreibung-initiative{
   margin-top: 8pt;
   width:100%;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 0.5em;
 }
 
 .field--name-field-mitglied-netzwerk-der-zivi {
@@ -223,12 +249,15 @@ font-size: 1.1em;}
   color: #339995;
   margin-bottom: 0.9em;
   margin-top: 0.9em;
+  margin-left: 1.5em;
 }
 
 
 .field--name-field-ort{
   margin-bottom: 0.7em;
 }
+
+
 
 .field--name-field-email .field--label{
   margin-top: 0.7em;
@@ -243,19 +272,30 @@ font-size: 1.1em;}
   font-size: 12pt;
 }
 
-.field--name-field-email .field--item{
-  font-weight: 500;
-  font-size: 12pt;
-}
-
-
 .field--name-field-email{
   margin-right: 0.8em;
+}
+
+.field--name-field-website{
+  margin-left: 1.5em;
 }
 
 .field--name-field-website .field--item{
   font-weight: 500;
   font-size: 12pt;
+}
+
+.field--name-field-website .field--label{
+  margin-top: 1em;
+  font-size: 18pt;
+  font-family: 'Pompiere', cursive;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+
+.field--name-field-taetigkeitsbereich-der-ini{
+  margin-left: 1.5em;
 }
 
 .field--name-field-taetigkeitsbereich-der-ini .field--label{
@@ -279,7 +319,11 @@ font-size: 1.1em;}
 }
 
 
-
+.views-field-field-ueber-mich{
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 1.5em;
+}
 
 
 
@@ -318,7 +362,7 @@ font-size: 1.1em;}
 }
 
 .block_unser_team h5{
-  color: #33CCCC;
+  color: #339995;;
   text-decoration: none;
   font-weight: 500;
   font-size: 12pt;

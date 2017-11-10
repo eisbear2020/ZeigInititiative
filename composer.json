@@ -8,7 +8,8 @@
         "wikimedia/composer-merge-plugin": "~1.4",
         "drupal/address": "~1.0",
         "drupal/geocoder": "^2.0@alpha",
-        "drupal/geophp": "^1.0@beta"
+        "drupal/geophp": "^1.0@beta",
+        "drupal/geofield": "^1.0@alpha"
     },
     "replace": {
         "drupal/core": "~8.3"
