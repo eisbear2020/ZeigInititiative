@@ -26,7 +26,6 @@ function form_initia_form_node_initiativen_form_alter(&$form, \Drupal\Core\Form\
 // Write initiative into user field
 function form_initia_entity_insert(Drupal\Core\Entity\EntityInterface $entity) {
   if ($entity->getEntityTypeId() == 'node' && $entity->bundle() == 'initiativen') {
-    // Here you modify only your day content type
           $node_storage = \Drupal::entityManager()->getStorage('node');
           // Loading the node initiativen.
           $node = $node_storage->load($entity->id());
