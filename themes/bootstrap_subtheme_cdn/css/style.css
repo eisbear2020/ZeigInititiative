@@ -194,26 +194,6 @@ margin-bottom: 1em;
 
 
 
-/*Offene Stellen*/
-.jetzt-helfen a{font-weight: 500;
-font-size: 1.1em;}
-.jetzt-helfen .views-col{padding-right: 0.5em;}
-.jetzt-helfen .views-field-field-zu-investierende-zeit{padding-top: 0.5em;}
-.jetzt-helfen .views-field-field-zu-investierende-zeit{font-weight: 500;}
-.jetzt-helfen .views-field-title{padding-top: 1em;}
-.jetzt-helfen .field-content a{
-  color: #33CCCC;
-  text-decoration: none;
-}
-
-.views-field-field-beschreibung-offene-stelle{
-  text-align: justify;
-  text-justify: inter-word;
-  margin-right: 1.5em;
-}
-
-
-
 /*Alle Initiativen*/
 .alle-initiativen .views-col{padding-bottom:0.5em;}
 
@@ -383,6 +363,70 @@ font-size: 1.1em;}
   font-family: Helvetica,Arial,sans-serif;
   margin-top: 1em;
 }
+
+
+
+/*Offene Stellen*/
+.jetzt-helfen a{font-weight: 500;
+font-size: 1.1em;}
+.jetzt-helfen .views-col{padding-right: 0.5em;}
+.jetzt-helfen .views-field-field-zu-investierende-zeit{padding-top: 0.5em;}
+.jetzt-helfen .views-field-field-zu-investierende-zeit{font-weight: 500;}
+.jetzt-helfen .views-field-title{padding-top: 1em;}
+.jetzt-helfen .field-content a{
+  color: #33CCCC;
+  text-decoration: none;
+}
+
+
+.layout_offene_stellen .field--name-field-beschreibung-offene-stelle{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.layout_offene_stellen .field--label{
+  font-size: 13pt;
+  font-family: 'Pompiere', cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 1.5em;
+  margin-bottom:0.5em;
+
+}
+
+.views-field-field-beschreibung-offene-stelle{
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 1.5em;
+}
+
+.layout_initiativen_teaser{
+  margin-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  border: solid 2px;
+  background-color: #fcfcfc;
+  min-width: 25em;
+}
+
+.layout_initiativen_teaser .field--label{
+  font-size: 13pt;
+  margin-top: 0.2em;
+  margin-bottom:0em;
+}
+
+
+.initiativen_titel_teaser a{
+margin-left: 0.9em;
+font-size: 18pt;
+font-family: 'Pompiere', cursive;
+text-transform: uppercase;
+font-weight: 200;
+  color: #33CCCC;
+  text-decoration: none;
+}
+
+
 
 /*Profil*/
 .profil_initiativen_link a{

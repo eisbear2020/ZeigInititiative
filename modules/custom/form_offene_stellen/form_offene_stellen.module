@@ -37,7 +37,7 @@ function form_offene_stellen_form_node_offene_stellen_form_alter(&$form, \Drupal
 
 }
 
-// Write initiative & Tätigkeitsbereich into Offene Stelle programmatically
+// Write initiative into Offene Stelle programmatically
 function form_offene_stellen_entity_insert(Drupal\Core\Entity\EntityInterface $entity) {
   if ($entity->getEntityTypeId() == 'node' && $entity->bundle() == 'offene_stellen') {
           $node_storage = \Drupal::entityManager()->getStorage('node');
@@ -52,12 +52,12 @@ function form_offene_stellen_entity_insert(Drupal\Core\Entity\EntityInterface $e
           $node->field_initiative->entity =  $user->field_meine_in->entity;
           $entity_initiative = $user->field_meine_in->entity;
           // Load node initiative
-          $node_initiative = $node_storage->load($entity_initiative->id());
+          //$node_initiative = $node_storage->load($entity_initiative->id());
           // write Tätigkeitsbereiche in offene Stelle
-          foreach($node_initiative->field_taetigkeitsbereich_der_ini as $taet){
-          $node->field_taetigkeitsbereich[] = $taet ->entity;
-          }
-          $node->field_kontakt_offene_stelle =  $node_initiative->field_email;
+          //foreach($node_initiative->field_taetigkeitsbereich_der_ini as $taet){
+          //$node->field_taetigkeitsbereich[] = $taet ->entity;
+          //}
+          //$node->field_kontakt_offene_stelle =  $node_initiative->field_email;
           $node->save();
   }
 }
