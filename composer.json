@@ -9,7 +9,8 @@
         "drupal/address": "~1.0",
         "drush/drush": "9.*",
         "drupal/geophp": "^1.0@beta",
-        "drupal/geofield": "^1.0@alpha"
+        "drupal/geofield": "^1.0@alpha",
+        "drupal/geocoder": "^2.0@alpha"
     },
     "replace": {
         "drupal/core": "^8.4"
