@@ -112,6 +112,11 @@ margin-left: 3.9em;
   text-justify: inter-word;
 }
 
+.initiativbewerbung_beschreibung h2{
+  text-align: left;
+}
+
+
 /*Helfer werden Formular*/
 .helfer_werden_formular{
  padding: 1em;
