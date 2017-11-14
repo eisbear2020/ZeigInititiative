@@ -1,1 +1,2 @@
 vendor/:composer.lock
+tmp_db/

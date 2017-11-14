@@ -44,4 +44,5 @@ core/phpunit.xml
 
 # Ignore tmp directory --> only for syncing
 tmp/
+tmp_db/
 
