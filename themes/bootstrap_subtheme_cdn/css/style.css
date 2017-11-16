@@ -319,8 +319,9 @@ margin-bottom: 1em;
 
 
 .views-field-field-ueber-mich{
-  text-align: justify;
-  text-justify: inter-word;
+  /*text-align: justify;
+  text-justify: inter-word;*/
+  margin-top: 0.5em;
   margin-right: 1.5em;
 }
 
@@ -400,8 +401,8 @@ font-size: 1.1em;}
 }
 
 .views-field-field-beschreibung-offene-stelle{
-  text-align: justify;
-  text-justify: inter-word;
+  /*text-align: justify;
+  text-justify: inter-word;*/
   margin-right: 1.5em;
 }
 
