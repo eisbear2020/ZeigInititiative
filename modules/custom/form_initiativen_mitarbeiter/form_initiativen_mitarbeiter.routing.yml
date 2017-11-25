@@ -1,0 +1,8 @@
+form_initiativen_mitarbeiter.content:
+  path: '/neuer_initiativen_mitarbeiter'
+  defaults:
+    _controller: '\Drupal\form_initiativen_mitarbeiter\Controller\InitiativenMitarbeiterController::content'
+    _title: 'Neuen Mitarbeiter eintragen'
+  requirements:
+    _permission: 'access content'
+
