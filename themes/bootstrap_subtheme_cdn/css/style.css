@@ -462,6 +462,25 @@ font-weight: 200;
   margin-top: 1em;
 }
 
+.block_unser_team_initiativenvertreterseite h2{
+  font-size: 18pt;
+  margin-bottom: -0.3em;
+}
+
+.block_unser_team_initiativenvertreterseite h5{
+  color: #339995;;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12pt;
+  font-family: Helvetica,Arial,sans-serif;
+  margin-top: 1em;
+}
+
+.button_link_neuer_mitarbeiter{
+  margin-top: 1em;
+}
+
+
 /*.btn .btn-default .profil{
   margin-top: 5em;
 }*/

@@ -1,0 +1,6 @@
+name: form_initiativen_mitarbeiter
+description: Creates page with form for Initiativen Mitarbeiter
+package: Custom
+
+type: module
+core: 8.x
