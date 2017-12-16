@@ -48,4 +48,4 @@ core/phpunit.xml
 tmp/
 tmp_db/
 
-vendor/drupal/coder
+vendor/drupal/coder/
