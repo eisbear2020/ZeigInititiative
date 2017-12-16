@@ -1,3 +1,5 @@
 vendor/
 tmp_db/
 core/
+core/phpcs.xml
+core/phpunit.xml
