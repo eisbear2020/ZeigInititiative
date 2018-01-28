@@ -16,7 +16,14 @@ function contact_form_freiwillige_mail_alter(&$message) {
       $user = \Drupal::currentUser();
       $id=$user->id();
       $user = \Drupal\user\Entity\User::load($id);
+      // write initiative into field "kontaktiert_von_initiative"
       $node->field_kontaktiert_von_initiative[] = $user->field_meine_in->entity;
+      // delete initiative from field "passende_initiative"
+      for ($i = 0; $i < $node->field_passende_initiative->count(); $i++) {
+        if ($node->field_passende_initiative[$i]->entity == $user->field_meine_in->entity){
+          $node->field_passende_initiative[$i] = NULL;
+        }
+      }
       $node->save();
     }
   }
