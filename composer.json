@@ -12,7 +12,8 @@
         "drupal/geofield": "^1.0@alpha",
         "drupal/geocoder": "^2.0@alpha",
         "drupal/recaptcha": "^2.2",
-        "drupal/maxlength": "^1.0"
+        "drupal/maxlength": "^1.0",
+        "drupal/google_analytics": "^2.2"
     },
     "replace": {
         "drupal/core": "^8.4"
