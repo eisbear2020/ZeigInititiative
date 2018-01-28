@@ -1,5 +1,5 @@
 tmp_db/
-!vendor/
+vendor/:composer.lock
 core/
 core/phpcs.xml
 core/phpunit.xml
