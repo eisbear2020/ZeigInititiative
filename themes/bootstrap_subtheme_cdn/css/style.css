@@ -409,10 +409,8 @@ font-size: 1.1em;}
 }
 
 
-.layout_offene_stellen .field--name-field-beschreibung-offene-stelle{
-  text-align: justify;
-  text-justify: inter-word;
-}
+
+
 
 .layout_offene_stellen .field--label{
   font-size: 13pt;
@@ -431,7 +429,7 @@ font-size: 1.1em;}
 }
 
 .layout_initiativen_teaser{
-  margin-left: 2em;
+  margin-top: 2em;
   padding-right: 1em;
   padding-bottom: 1em;
   border: solid 2px;
