@@ -12,7 +12,13 @@
         "drupal/leaflet": "^1.0@beta",
         "drupal/geocoder": "^2.0",
         "drupal/admin_toolbar": "^1.23",
-        "drupal/bootstrap_library": "^1.10"
+        "drupal/bootstrap_library": "^1.10",
+        "drupal/devel": "^1.2",
+        "drupal/login_emailusername": "^1.1",
+        "drupal/bootstrap": "^3.10",
+        "drupal/views_bootstrap": "^3.0",
+        "drupal/shield": "^1.2",
+        "drupal/rabbit_hole": "^1.0"
     },
     "replace": {
     },
