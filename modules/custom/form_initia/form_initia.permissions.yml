@@ -1,0 +1,4 @@
+form_initia form_permission:
+  title: 'Permission for initiative creation form'
+  description: 'Definiert wer anhand des Formulars eine Initiative anlegen kann'
+  restrict access: false

@@ -11,7 +11,8 @@
         "drupal/recreate_block_content": "^2.0",
         "drupal/leaflet": "^1.0@beta",
         "drupal/geocoder": "^2.0",
-        "drupal/admin_toolbar": "^1.23"
+        "drupal/admin_toolbar": "^1.23",
+        "drupal/bootstrap_library": "^1.10"
     },
     "replace": {
     },

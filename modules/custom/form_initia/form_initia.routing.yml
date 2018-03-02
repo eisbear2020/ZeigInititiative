@@ -4,5 +4,5 @@ form_initia.content:
     _controller: '\Drupal\form_initia\Controller\FormInitiaController::content'
     _title: 'Helfer finden'
   requirements:
-    _permission: 'access content'
+    _permission: 'form_initia form_permission'
 

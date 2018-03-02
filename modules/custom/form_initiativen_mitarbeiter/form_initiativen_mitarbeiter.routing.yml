@@ -4,5 +4,5 @@ form_initiativen_mitarbeiter.content:
     _controller: '\Drupal\form_initiativen_mitarbeiter\Controller\InitiativenMitarbeiterController::content'
     _title: 'Neuen Mitarbeiter eintragen'
   requirements:
-    _permission: 'access content'
+    _permission: 'form_initiativen_mitarbeiter form_permission'
 

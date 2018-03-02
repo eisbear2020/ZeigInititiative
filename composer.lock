@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "66eeeb033f61266e964c80b82a95446e",
+    "content-hash": "ec5ee5e2526ac7463423813d562de059",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -868,6 +868,53 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/bootstrap_library",
+            "version": "1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bootstrap_library",
+                "reference": "8.x-1.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_library-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "d71b28d164e66d62b9ae2a64a044b2ffee2ac511"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.10",
+                    "datestamp": "1518664083",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "hatuhay",
+                    "homepage": "https://www.drupal.org/user/827704"
+                }
+            ],
+            "description": "Register Boostrap as a library by installing files in /sites/all/libraries/bootstrap.",
+            "homepage": "https://www.drupal.org/project/bootstrap_library",
+            "support": {
+                "source": "http://cgit.drupalcode.org/bootstrap_library"
             }
         },
         {

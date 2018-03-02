@@ -4,5 +4,5 @@ form_offene_stellen.content:
     _controller: '\Drupal\form_offene_stellen\Controller\OffeneStellenController::content'
     _title: 'Helfer finden'
   requirements:
-    _permission: 'access content'
+    _permission: 'form_offene_stellen form_permission'
 
