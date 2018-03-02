@@ -1,8 +1,0 @@
-<?php
-
-/**
- * Failing update.
- */
-function woot_update_8101() {
-  throw new \Exception('8101 error');
-}
