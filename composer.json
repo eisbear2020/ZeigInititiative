@@ -18,7 +18,8 @@
         "drupal/bootstrap": "^3.10",
         "drupal/views_bootstrap": "^3.0",
         "drupal/shield": "^1.2",
-        "drupal/rabbit_hole": "^1.0"
+        "drupal/rabbit_hole": "^1.0",
+        "drupal/eva": "^1.3"
     },
     "replace": {
     },

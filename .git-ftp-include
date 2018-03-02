@@ -3,3 +3,5 @@ vendor/:composer.lock
 core/
 core/phpcs.xml
 core/phpunit.xml
+composer.json
+composer.lock
