@@ -5860,109 +5860,6 @@
         "description": "Drupal code generator"
     },
     {
-        "name": "drush/drush",
-        "version": "9.0.0-beta9",
-        "version_normalized": "9.0.0.0-beta9",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/drush-ops/drush.git",
-            "reference": "89c822eb5279363e9f7091a9e7878eb9870d5486"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/drush-ops/drush/zipball/89c822eb5279363e9f7091a9e7878eb9870d5486",
-            "reference": "89c822eb5279363e9f7091a9e7878eb9870d5486",
-            "shasum": ""
-        },
-        "require": {
-            "chi-teck/drupal-code-generator": "^1.17.3",
-            "composer/semver": "^1.4",
-            "consolidation/annotated-command": "^2.8.1",
-            "consolidation/config": "^1.0.7",
-            "consolidation/output-formatters": "^3.1.12",
-            "consolidation/robo": "^1.1.5",
-            "ext-dom": "*",
-            "grasmash/yaml-expander": "^1.1.1",
-            "league/container": "~2",
-            "pear/console_table": "~1.3.0",
-            "php": ">=5.6.0",
-            "psr/log": "~1.0",
-            "psy/psysh": "~0.6",
-            "sebastian/version": "^1|^2",
-            "symfony/config": "~2.2|^3",
-            "symfony/console": "~2.7|^3",
-            "symfony/event-dispatcher": "~2.7|^3",
-            "symfony/finder": "~2.7|^3",
-            "symfony/process": "~2.7|^3",
-            "symfony/var-dumper": "~2.7|^3",
-            "symfony/yaml": "~2.3|^3",
-            "webflo/drupal-finder": "^1.1",
-            "webmozart/path-util": "^2.1.0"
-        },
-        "require-dev": {
-            "lox/xhprof": "dev-master",
-            "phpunit/phpunit": "^4.8|^5.5.4",
-            "squizlabs/php_codesniffer": "^2.7"
-        },
-        "time": "2017-11-09T10:37:44+00:00",
-        "bin": [
-            "drush"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "9.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Drush\\": "src/",
-                "Unish\\": "tests/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Moshe Weitzman",
-                "email": "weitzman@tejasa.com"
-            },
-            {
-                "name": "Owen Barton",
-                "email": "drupal@owenbarton.com"
-            },
-            {
-                "name": "Greg Anderson",
-                "email": "greg.1.anderson@greenknowe.org"
-            },
-            {
-                "name": "Jonathan Araña Cruz",
-                "email": "jonhattan@faita.net"
-            },
-            {
-                "name": "Jonathan Hedstrom",
-                "email": "jhedstrom@gmail.com"
-            },
-            {
-                "name": "Christopher Gervais",
-                "email": "chris@ergonlogic.com"
-            },
-            {
-                "name": "Dave Reid",
-                "email": "dave@davereid.net"
-            },
-            {
-                "name": "Damian Lee",
-                "email": "damiankloip@googlemail.com"
-            }
-        ],
-        "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
-        "homepage": "http://www.drush.org"
-    },
-    {
         "name": "drupal/geophp",
         "version": "1.0.0-beta2",
         "version_normalized": "1.0.0.0-beta2",
@@ -6729,5 +6626,107 @@
             "source": "http://git.drupal.org/project/google_analytics.git",
             "issues": "https://www.drupal.org/project/issues/google_analytics"
         }
+    },
+    {
+        "name": "drush/drush",
+        "version": "9.0.0-rc1",
+        "version_normalized": "9.0.0.0-RC1",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/drush-ops/drush.git",
+            "reference": "20360f1c590f53a196e971b180c91b625eb9ed98"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/drush-ops/drush/zipball/20360f1c590f53a196e971b180c91b625eb9ed98",
+            "reference": "20360f1c590f53a196e971b180c91b625eb9ed98",
+            "shasum": ""
+        },
+        "require": {
+            "chi-teck/drupal-code-generator": "^1.17.3",
+            "composer/semver": "^1.4",
+            "consolidation/annotated-command": "^2.8.1",
+            "consolidation/config": "^1.0.7",
+            "consolidation/output-formatters": "^3.1.12",
+            "consolidation/robo": "^1.1.5",
+            "ext-dom": "*",
+            "grasmash/yaml-expander": "^1.1.1",
+            "league/container": "~2",
+            "php": ">=5.6.0",
+            "psr/log": "~1.0",
+            "psy/psysh": "~0.6",
+            "sebastian/version": "^1|^2",
+            "symfony/config": "~2.2|^3",
+            "symfony/console": "~2.7|^3",
+            "symfony/event-dispatcher": "~2.7|^3",
+            "symfony/finder": "~2.7|^3",
+            "symfony/process": "~2.7|^3",
+            "symfony/var-dumper": "~2.7|^3",
+            "symfony/yaml": "~2.3|^3",
+            "webflo/drupal-finder": "^1.1",
+            "webmozart/path-util": "^2.1.0"
+        },
+        "require-dev": {
+            "lox/xhprof": "dev-master",
+            "phpunit/phpunit": "^4.8|^5.5.4",
+            "squizlabs/php_codesniffer": "^2.7"
+        },
+        "time": "2017-11-30T16:06:54+00:00",
+        "bin": [
+            "drush"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "9.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Drush\\": "src/",
+                "Unish\\": "tests/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Moshe Weitzman",
+                "email": "weitzman@tejasa.com"
+            },
+            {
+                "name": "Owen Barton",
+                "email": "drupal@owenbarton.com"
+            },
+            {
+                "name": "Greg Anderson",
+                "email": "greg.1.anderson@greenknowe.org"
+            },
+            {
+                "name": "Jonathan Araña Cruz",
+                "email": "jonhattan@faita.net"
+            },
+            {
+                "name": "Jonathan Hedstrom",
+                "email": "jhedstrom@gmail.com"
+            },
+            {
+                "name": "Christopher Gervais",
+                "email": "chris@ergonlogic.com"
+            },
+            {
+                "name": "Dave Reid",
+                "email": "dave@davereid.net"
+            },
+            {
+                "name": "Damian Lee",
+                "email": "damiankloip@googlemail.com"
+            }
+        ],
+        "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
+        "homepage": "http://www.drush.org"
     }
 ]
