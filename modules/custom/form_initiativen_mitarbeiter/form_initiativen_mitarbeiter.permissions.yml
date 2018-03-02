@@ -1,0 +1,4 @@
+form_initiativen_mitarbeiter form_permission:
+  title: 'Permission for team member creation form'
+  description: 'Definiert wer anhand des Formulars Mitglieder zur Initiative hinzufügen kann'
+  restrict access: false

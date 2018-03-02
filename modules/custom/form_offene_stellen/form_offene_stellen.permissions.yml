@@ -1,0 +1,4 @@
+form_offene_stellen form_permission:
+  title: 'Permission for job creation form'
+  description: 'Definiert wer anhand des Formulars Offene Gesuche hinzufügen kann'
+  restrict access: false

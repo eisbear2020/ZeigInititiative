@@ -7,7 +7,6 @@
 
 use Drupal\block_content\Entity\BlockContent;
 use Drupal\Core\Routing\RouteMatchInterface;
-use Drupal\block\Entity\Block;
 use Drupal\block_content\Entity\BlockContentType;
 
 /**
@@ -28,41 +27,90 @@ function recreate_block_content_help($route_name, RouteMatchInterface $route_mat
 
 /**
  * Implements hook_rebuild().
- *
- * The block_content module has a derivative that creates a block when there is
- * a block_content but when exporting the configurations only the block is
- * exported. Here we recreate the missing block_content for blocks.
  */
 function recreate_block_content_rebuild() {
+  $config_manager = \Drupal::service('config.manager');
+  $missing_content = $config_manager->findMissingContentDependencies();
   $block_bundles = BlockContentType::loadMultiple();
-  foreach (Block::loadMultiple() as $block) {
-    // The plugin id is module:uuid.
-    $plugin_id = explode(':', $block->getPluginId());
-    if ($plugin_id[0] == 'block_content') {
-      $dependencies = $block->getDependencies();
-      if (!empty($dependencies['content'])) {
-        list(, $type, $uuid) = explode(':', $dependencies['content'][0]);
-        if (isset($block_bundles[$type])) {
-          // Check if block exists.
-          $block_by_uuid = \Drupal::service('entity.repository')
-            ->loadEntityByUuid('block_content', $uuid);
-          if (!$block_by_uuid) {
-            $block_content = BlockContent::create([
-              'type' => $type,
-              'info' => $block->id(),
-              'uuid' => $uuid,
-            ]);
-            $block_content->save();
-          }
+
+  foreach ($missing_content as $content) {
+    if ($content['entity_type'] == 'block_content') {
+
+      // Get the dependents, we only consider the first one for the messages,
+      // its just a clue anyway.
+      $config_name = implode(':', $content);
+      $dependents = $config_manager->findConfigEntityDependents('content', [$config_name]);
+      $dependent = reset($dependents);
+
+      if (isset($block_bundles[$content['bundle']])) {
+        $title = recreate_block_content_title($content);
+        $block_content = BlockContent::create([
+          'type' => $content['bundle'],
+          'info' => $title,
+          'uuid' => $content['uuid'],
+        ]);
+        $block_content->save();
+        $message = t('The block content for @block was recreated successfully.', ['@block' => $title]);
+        drupal_set_message($message);
+        if (function_exists('drush_log')) {
+          drush_log($message);
         }
-        else {
-          \Drupal::logger('recreate_block_content')
-            ->error("An attempt to recreate the block @block_id failed, the block type @block_type doesn't exists.", [
-              '@block_id' => $block->id(),
-              '@block_type' => $type,
-            ]);
-        }
+      }
+      else {
+        \Drupal::logger('recreate_block_content')
+          ->error("An attempt to recreate the block for @dependent failed, the block type @bundle doesn't exists.", [
+            '@dependent' => $title,
+            '@bundle' => $content['bundle'],
+          ]);
       }
     }
   }
+}
+
+/**
+ * Try to generate a title for the block if possible.
+ *
+ * This function will get the title from the block configuration or the page
+ * manager, else it will return the config dependency name.
+ */
+function recreate_block_content_title($content) {
+  $config_manager = \Drupal::service('config.manager');
+  $config_name = implode(':', $content);
+  $dependents = $config_manager->findConfigEntityDependents('content', [$config_name]);
+
+  $title = NULL;
+  // This is to set a preference on what will provide the title.
+  $provider = INF;
+  foreach ($dependents as $config_name => $dependent) {
+    $config = \Drupal::config($config_name);
+    $parts = explode('.', $config_name);
+    $module_name = reset($parts);
+    $data = $config->getRawData();
+    // It doesnt have a break on purpose.
+    switch ($module_name) {
+      case 'block':
+        $provider = 1;
+        $title = $data['settings']['label'];
+        break;
+
+      case 'page_manager':
+        if ($provider > 1) {
+          $provider = 2;
+          // We need to find the label.
+          foreach ($data['variant_settings']['blocks'] as $block) {
+            list(, $uuid) = explode(':', $block['id']);
+            if ($uuid == $content['uuid']) {
+              $title = $block['label'];
+              break;
+            }
+          }
+        }
+        break;
+    }
+  }
+  if ($title == NULL) {
+    $keys = array_keys($dependents);
+    $title = reset($keys);
+  }
+  return $title;
 }
