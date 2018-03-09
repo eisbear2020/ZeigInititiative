@@ -2135,89 +2135,6 @@
         "homepage": "https://github.com/phayes/geoPHP"
     },
     {
-        "name": "drupal/geofield",
-        "version": "1.0.0-beta3",
-        "version_normalized": "1.0.0.0-beta3",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupal.org/project/geofield",
-            "reference": "8.x-1.0-beta3"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.0-beta3.zip",
-            "reference": "8.x-1.0-beta3",
-            "shasum": "712f3a005e5fac02791d314ac87fda4e449af6fe"
-        },
-        "require": {
-            "drupal/core": "~8.0",
-            "phayes/geophp": "^1.2"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "branch-alias": {
-                "dev-1.x": "1.x-dev"
-            },
-            "drupal": {
-                "version": "8.x-1.0-beta3",
-                "datestamp": "1519775884",
-                "security-coverage": {
-                    "status": "not-covered",
-                    "message": "Beta releases are not covered by Drupal security advisories."
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Brandon Morrison",
-                "homepage": "https://www.drupal.org/u/brandonian",
-                "role": "Maintainer"
-            },
-            {
-                "name": "Pablo López",
-                "homepage": "https://www.drupal.org/u/plopesc",
-                "role": "Maintainer"
-            },
-            {
-                "name": "Italo Mairo",
-                "homepage": "https://www.drupal.org/u/itamair",
-                "role": "Maintainer"
-            },
-            {
-                "name": "davidseth",
-                "homepage": "https://www.drupal.org/user/254857"
-            },
-            {
-                "name": "itamair",
-                "homepage": "https://www.drupal.org/user/1179076"
-            },
-            {
-                "name": "phayes",
-                "homepage": "https://www.drupal.org/user/47098"
-            },
-            {
-                "name": "plopesc",
-                "homepage": "https://www.drupal.org/user/282415"
-            },
-            {
-                "name": "zzolo",
-                "homepage": "https://www.drupal.org/user/147331"
-            }
-        ],
-        "description": "Stores geographic and location data (points, lines, and polygons).",
-        "homepage": "https://www.drupal.org/project/geofield",
-        "support": {
-            "source": "http://git.drupal.org/project/geofield.git",
-            "issues": "https://www.drupal.org/project/issues/geofield",
-            "irc": "irc://irc.freenode.org/drupal-contribute"
-        }
-    },
-    {
         "name": "drupal/leaflet",
         "version": "1.0.0-beta2",
         "version_normalized": "1.0.0.0-beta2",
@@ -2292,296 +2209,6 @@
         "support": {
             "source": "http://cgit.drupalcode.org/leaflet",
             "issues": "https://www.drupal.org/project/issues/leaflet"
-        }
-    },
-    {
-        "name": "igorw/get-in",
-        "version": "v1.0.3",
-        "version_normalized": "1.0.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/igorw/get-in.git",
-            "reference": "170ded831f49abc6a6061f655aba9bdbcf7b8111"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/igorw/get-in/zipball/170ded831f49abc6a6061f655aba9bdbcf7b8111",
-            "reference": "170ded831f49abc6a6061f655aba9bdbcf7b8111",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4"
-        },
-        "time": "2014-12-15T23:03:51+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "src/get_in.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Igor Wiedler",
-                "email": "igor@wiedler.ch"
-            }
-        ],
-        "description": "Functions for for hash map (assoc array) traversal.",
-        "keywords": [
-            "assoc-array",
-            "hash-map"
-        ]
-    },
-    {
-        "name": "egeloen/http-adapter",
-        "version": "0.8.0",
-        "version_normalized": "0.8.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/egeloen/ivory-http-adapter.git",
-            "reference": "9641f11487ec26b24c6bbcee4f267cf62f60b855"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/egeloen/ivory-http-adapter/zipball/9641f11487ec26b24c6bbcee4f267cf62f60b855",
-            "reference": "9641f11487ec26b24c6bbcee4f267cf62f60b855",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.8",
-            "zendframework/zend-diactoros": "^1.1"
-        },
-        "require-dev": {
-            "cakephp/cakephp": "^3.0.3",
-            "ext-curl": "*",
-            "guzzle/guzzle": "^3.9.4@dev",
-            "guzzlehttp/guzzle": "^4.1.4|^5.0|^6.0",
-            "kriswallsmith/buzz": "^0.13",
-            "nategood/httpful": "^0.2.17",
-            "phpunit/phpunit": "^4.0",
-            "phpunit/phpunit-mock-objects": "dev-matcher-verify as 2.3.x-dev",
-            "psr/log": "^1.0",
-            "react/dns": "^0.4.1",
-            "react/http-client": "^0.4",
-            "satooshi/php-coveralls": "^0.6",
-            "symfony/event-dispatcher": "^2.0",
-            "zendframework/zend-http": "^2.3.4",
-            "zendframework/zendframework1": ">=1.12.9,<=1.12.14|^1.12.16"
-        },
-        "suggest": {
-            "ext-curl": "Allows you to use the cURL adapter",
-            "ext-http": "Allows you to use the PECL adapter",
-            "guzzle/guzzle": "Allows you to use the Guzzle 3 adapter",
-            "guzzlehttp/guzzle": "Allows you to use the Guzzle 4 adapter",
-            "kriswallsmith/buzz": "Allows you to use the Buzz adapter",
-            "nategood/httpful": "Allows you to use the httpful adapter",
-            "psr/log": "Allows you to use the logger event subscriber",
-            "symfony/event-dispatcher": "Allows you to use the event lifecycle",
-            "symfony/stopwatch": "Allows you to use the stopwatch http adapter and event subscriber",
-            "zendframework/zend-http": "Allows you to use the Zend 2 adapter",
-            "zendframework/zendframework1": "Allows you to use the Zend 1 adapter"
-        },
-        "time": "2015-08-12T09:35:40+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "0.8-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Ivory\\HttpAdapter\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Eric GELOEN",
-                "email": "geloen.eric@gmail.com"
-            }
-        ],
-        "description": "Issue HTTP request for PHP 5.3+.",
-        "keywords": [
-            "http",
-            "http-adapter",
-            "http-client",
-            "psr-7"
-        ],
-        "abandoned": "php-http/httplug"
-    },
-    {
-        "name": "willdurand/geocoder",
-        "version": "v3.3.2",
-        "version_normalized": "3.3.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/geocoder-php/php-common.git",
-            "reference": "ccc178e2984c0af24881faa0ffe515f20e5e8c23"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/geocoder-php/php-common/zipball/ccc178e2984c0af24881faa0ffe515f20e5e8c23",
-            "reference": "ccc178e2984c0af24881faa0ffe515f20e5e8c23",
-            "shasum": ""
-        },
-        "require": {
-            "egeloen/http-adapter": "~0.8",
-            "igorw/get-in": "~1.0",
-            "php": ">=5.4.0"
-        },
-        "require-dev": {
-            "geoip2/geoip2": "~2.0",
-            "symfony/stopwatch": "~2.5"
-        },
-        "suggest": {
-            "ext-geoip": "Enabling the geoip extension allows you to use the MaxMindProvider.",
-            "geoip/geoip": "If you are going to use the MaxMindBinaryProvider (conflict with geoip extension).",
-            "geoip2/geoip2": "If you are going to use the GeoIP2DatabaseProvider.",
-            "symfony/stopwatch": "If you want to use the TimedGeocoder"
-        },
-        "time": "2015-12-06T20:17:20+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.3-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Geocoder": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "William Durand",
-                "email": "william.durand1@gmail.com"
-            }
-        ],
-        "description": "The almost missing Geocoder PHP 5.4 library.",
-        "homepage": "http://geocoder-php.org",
-        "keywords": [
-            "abstraction",
-            "geocoder",
-            "geocoding",
-            "geoip"
-        ]
-    },
-    {
-        "name": "drupal/geocoder",
-        "version": "2.0.0-beta2",
-        "version_normalized": "2.0.0.0-beta2",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupal.org/project/geocoder",
-            "reference": "8.x-2.0-beta2"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0-beta2.zip",
-            "reference": "8.x-2.0-beta2",
-            "shasum": "c85caef52ea3cbd56c6df4b3c205b1a88a0f634e"
-        },
-        "require": {
-            "drupal/core": "~8.0",
-            "willdurand/geocoder": "^3.3"
-        },
-        "require-dev": {
-            "drupal/address": "*",
-            "drupal/coder": "^8.2",
-            "drupal/geocoder_field": "*",
-            "drupal/geofield": "*",
-            "phpro/grumphp": "^0.12.1",
-            "phpunit/phpunit": "^5.7|^6.5",
-            "sensiolabs/security-checker": "^4.1",
-            "squizlabs/php_codesniffer": "^2.7"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "branch-alias": {
-                "dev-2.x": "2.x-dev"
-            },
-            "drupal": {
-                "version": "8.x-2.0-beta2",
-                "datestamp": "1516738685",
-                "security-coverage": {
-                    "status": "not-covered",
-                    "message": "Beta releases are not covered by Drupal security advisories."
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Pol Dellaiera (@drupol)",
-                "homepage": "https://www.drupal.org/u/pol",
-                "role": "Maintainer"
-            },
-            {
-                "name": "Italo Mairo (@itamair)",
-                "homepage": "https://www.drupal.org/u/itamair",
-                "role": "Co-maintainer"
-            },
-            {
-                "name": "GJdan",
-                "homepage": "https://www.drupal.org/user/847848"
-            },
-            {
-                "name": "Pol",
-                "homepage": "https://www.drupal.org/user/47194"
-            },
-            {
-                "name": "Simon Georges",
-                "homepage": "https://www.drupal.org/user/172312"
-            },
-            {
-                "name": "indytechcook",
-                "homepage": "https://www.drupal.org/user/245817"
-            },
-            {
-                "name": "itamair",
-                "homepage": "https://www.drupal.org/user/1179076"
-            },
-            {
-                "name": "michaelfavia",
-                "homepage": "https://www.drupal.org/user/49137"
-            },
-            {
-                "name": "phayes",
-                "homepage": "https://www.drupal.org/user/47098"
-            },
-            {
-                "name": "vidhatanand",
-                "homepage": "https://www.drupal.org/user/585764"
-            }
-        ],
-        "description": "A Drupal module and a services based API to perform Geocode & Reverse Geocode operations among GIS data and addresses types & formats.",
-        "homepage": "https://drupal.org/project/geocoder",
-        "support": {
-            "source": "https://cgit.drupalcode.org/geocoder",
-            "issues": "https://drupal.org/project/issues/geocoder",
-            "irc": "irc://irc.freenode.org/drupal-geo"
         }
     },
     {
@@ -6223,6 +5850,755 @@
         "homepage": "https://www.drupal.org/project/pathauto",
         "support": {
             "source": "http://cgit.drupalcode.org/pathauto"
+        }
+    },
+    {
+        "name": "igorw/get-in",
+        "version": "v1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/igorw/get-in.git",
+            "reference": "170ded831f49abc6a6061f655aba9bdbcf7b8111"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/igorw/get-in/zipball/170ded831f49abc6a6061f655aba9bdbcf7b8111",
+            "reference": "170ded831f49abc6a6061f655aba9bdbcf7b8111",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "time": "2014-12-15T23:03:51+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/get_in.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Igor Wiedler",
+                "email": "igor@wiedler.ch"
+            }
+        ],
+        "description": "Functions for for hash map (assoc array) traversal.",
+        "keywords": [
+            "assoc-array",
+            "hash-map"
+        ]
+    },
+    {
+        "name": "egeloen/http-adapter",
+        "version": "0.8.0",
+        "version_normalized": "0.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/egeloen/ivory-http-adapter.git",
+            "reference": "9641f11487ec26b24c6bbcee4f267cf62f60b855"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/egeloen/ivory-http-adapter/zipball/9641f11487ec26b24c6bbcee4f267cf62f60b855",
+            "reference": "9641f11487ec26b24c6bbcee4f267cf62f60b855",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.8",
+            "zendframework/zend-diactoros": "^1.1"
+        },
+        "require-dev": {
+            "cakephp/cakephp": "^3.0.3",
+            "ext-curl": "*",
+            "guzzle/guzzle": "^3.9.4@dev",
+            "guzzlehttp/guzzle": "^4.1.4|^5.0|^6.0",
+            "kriswallsmith/buzz": "^0.13",
+            "nategood/httpful": "^0.2.17",
+            "phpunit/phpunit": "^4.0",
+            "phpunit/phpunit-mock-objects": "dev-matcher-verify as 2.3.x-dev",
+            "psr/log": "^1.0",
+            "react/dns": "^0.4.1",
+            "react/http-client": "^0.4",
+            "satooshi/php-coveralls": "^0.6",
+            "symfony/event-dispatcher": "^2.0",
+            "zendframework/zend-http": "^2.3.4",
+            "zendframework/zendframework1": ">=1.12.9,<=1.12.14|^1.12.16"
+        },
+        "suggest": {
+            "ext-curl": "Allows you to use the cURL adapter",
+            "ext-http": "Allows you to use the PECL adapter",
+            "guzzle/guzzle": "Allows you to use the Guzzle 3 adapter",
+            "guzzlehttp/guzzle": "Allows you to use the Guzzle 4 adapter",
+            "kriswallsmith/buzz": "Allows you to use the Buzz adapter",
+            "nategood/httpful": "Allows you to use the httpful adapter",
+            "psr/log": "Allows you to use the logger event subscriber",
+            "symfony/event-dispatcher": "Allows you to use the event lifecycle",
+            "symfony/stopwatch": "Allows you to use the stopwatch http adapter and event subscriber",
+            "zendframework/zend-http": "Allows you to use the Zend 2 adapter",
+            "zendframework/zendframework1": "Allows you to use the Zend 1 adapter"
+        },
+        "time": "2015-08-12T09:35:40+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Ivory\\HttpAdapter\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Eric GELOEN",
+                "email": "geloen.eric@gmail.com"
+            }
+        ],
+        "description": "Issue HTTP request for PHP 5.3+.",
+        "keywords": [
+            "http",
+            "http-adapter",
+            "http-client",
+            "psr-7"
+        ],
+        "abandoned": "php-http/httplug"
+    },
+    {
+        "name": "willdurand/geocoder",
+        "version": "v3.3.2",
+        "version_normalized": "3.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/geocoder-php/php-common.git",
+            "reference": "ccc178e2984c0af24881faa0ffe515f20e5e8c23"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/geocoder-php/php-common/zipball/ccc178e2984c0af24881faa0ffe515f20e5e8c23",
+            "reference": "ccc178e2984c0af24881faa0ffe515f20e5e8c23",
+            "shasum": ""
+        },
+        "require": {
+            "egeloen/http-adapter": "~0.8",
+            "igorw/get-in": "~1.0",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "geoip2/geoip2": "~2.0",
+            "symfony/stopwatch": "~2.5"
+        },
+        "suggest": {
+            "ext-geoip": "Enabling the geoip extension allows you to use the MaxMindProvider.",
+            "geoip/geoip": "If you are going to use the MaxMindBinaryProvider (conflict with geoip extension).",
+            "geoip2/geoip2": "If you are going to use the GeoIP2DatabaseProvider.",
+            "symfony/stopwatch": "If you want to use the TimedGeocoder"
+        },
+        "time": "2015-12-06T20:17:20+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Geocoder": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "William Durand",
+                "email": "william.durand1@gmail.com"
+            }
+        ],
+        "description": "The almost missing Geocoder PHP 5.4 library.",
+        "homepage": "http://geocoder-php.org",
+        "keywords": [
+            "abstraction",
+            "geocoder",
+            "geocoding",
+            "geoip"
+        ]
+    },
+    {
+        "name": "drupal/geocoder",
+        "version": "2.0.0-beta2",
+        "version_normalized": "2.0.0.0-beta2",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/geocoder",
+            "reference": "8.x-2.0-beta2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.0-beta2.zip",
+            "reference": "8.x-2.0-beta2",
+            "shasum": "c85caef52ea3cbd56c6df4b3c205b1a88a0f634e"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "willdurand/geocoder": "^3.3"
+        },
+        "require-dev": {
+            "drupal/address": "*",
+            "drupal/coder": "^8.2",
+            "drupal/geocoder_field": "*",
+            "drupal/geofield": "*",
+            "phpro/grumphp": "^0.12.1",
+            "phpunit/phpunit": "^5.7|^6.5",
+            "sensiolabs/security-checker": "^4.1",
+            "squizlabs/php_codesniffer": "^2.7"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0-beta2",
+                "datestamp": "1516738685",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Pol Dellaiera (@drupol)",
+                "homepage": "https://www.drupal.org/u/pol",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Italo Mairo (@itamair)",
+                "homepage": "https://www.drupal.org/u/itamair",
+                "role": "Co-maintainer"
+            },
+            {
+                "name": "GJdan",
+                "homepage": "https://www.drupal.org/user/847848"
+            },
+            {
+                "name": "Pol",
+                "homepage": "https://www.drupal.org/user/47194"
+            },
+            {
+                "name": "Simon Georges",
+                "homepage": "https://www.drupal.org/user/172312"
+            },
+            {
+                "name": "indytechcook",
+                "homepage": "https://www.drupal.org/user/245817"
+            },
+            {
+                "name": "itamair",
+                "homepage": "https://www.drupal.org/user/1179076"
+            },
+            {
+                "name": "michaelfavia",
+                "homepage": "https://www.drupal.org/user/49137"
+            },
+            {
+                "name": "phayes",
+                "homepage": "https://www.drupal.org/user/47098"
+            },
+            {
+                "name": "vidhatanand",
+                "homepage": "https://www.drupal.org/user/585764"
+            }
+        ],
+        "description": "A Drupal module and a services based API to perform Geocode & Reverse Geocode operations among GIS data and addresses types & formats.",
+        "homepage": "https://drupal.org/project/geocoder",
+        "support": {
+            "source": "https://cgit.drupalcode.org/geocoder",
+            "issues": "https://drupal.org/project/issues/geocoder",
+            "irc": "irc://irc.freenode.org/drupal-geo"
+        }
+    },
+    {
+        "name": "drupal/entity",
+        "version": "1.0.0-beta1",
+        "version_normalized": "1.0.0.0-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/entity",
+            "reference": "8.x-1.0-beta1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.0-beta1.zip",
+            "reference": "8.x-1.0-beta1",
+            "shasum": "6965349818de8cb820113b6841076162190c1a4c"
+        },
+        "require": {
+            "drupal/core": "~8.3"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta1",
+                "datestamp": "1505895844",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "dawehner",
+                "homepage": "https://www.drupal.org/user/99340"
+            },
+            {
+                "name": "dixon_",
+                "homepage": "https://www.drupal.org/user/239911"
+            },
+            {
+                "name": "fago",
+                "homepage": "https://www.drupal.org/user/16747"
+            }
+        ],
+        "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
+        "homepage": "http://drupal.org/project/entity",
+        "support": {
+            "source": "http://cgit.drupalcode.org/entity"
+        }
+    },
+    {
+        "name": "drupal/field_group",
+        "version": "3.0.0-beta1",
+        "version_normalized": "3.0.0.0-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/field_group",
+            "reference": "8.x-3.0-beta1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.0-beta1.zip",
+            "reference": "8.x-3.0-beta1",
+            "shasum": "a5dfb66385be7a1b3db232e49779d5bc530a048e"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-3.x": "3.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-3.0-beta1",
+                "datestamp": "1510352338",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Hydra",
+                "homepage": "https://www.drupal.org/user/647364"
+            },
+            {
+                "name": "Stalski",
+                "homepage": "https://www.drupal.org/user/322618"
+            },
+            {
+                "name": "jyve",
+                "homepage": "https://www.drupal.org/user/591438"
+            },
+            {
+                "name": "swentel",
+                "homepage": "https://www.drupal.org/user/107403"
+            },
+            {
+                "name": "zuuperman",
+                "homepage": "https://www.drupal.org/user/361625"
+            }
+        ],
+        "description": "Provides the field_group module.",
+        "homepage": "https://www.drupal.org/project/field_group",
+        "support": {
+            "source": "http://cgit.drupalcode.org/field_group"
+        }
+    },
+    {
+        "name": "drupal/field_permissions",
+        "version": "1.0.0-beta4",
+        "version_normalized": "1.0.0.0-beta4",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/field_permissions",
+            "reference": "8.x-1.0-beta4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/field_permissions-8.x-1.0-beta4.zip",
+            "reference": "8.x-1.0-beta4",
+            "shasum": "f9592d17268bd075445272404ef6262683358cc5"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta4",
+                "datestamp": "1505340243",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "RobLoach",
+                "homepage": "https://www.drupal.org/user/61114"
+            },
+            {
+                "name": "jhedstrom",
+                "homepage": "https://www.drupal.org/user/208732"
+            },
+            {
+                "name": "mariacha1",
+                "homepage": "https://www.drupal.org/user/2210776"
+            },
+            {
+                "name": "markus_petrux",
+                "homepage": "https://www.drupal.org/user/39593"
+            }
+        ],
+        "description": "The Field Permissions module allows site administrators to set field-level permissions to edit, view and create fields on any entity.",
+        "homepage": "https://www.drupal.org/project/field_permissions",
+        "support": {
+            "source": "http://cgit.drupalcode.org/field_permissions",
+            "issues": "https://www.drupal.org/project/issues/field_permissions"
+        }
+    },
+    {
+        "name": "drupal/fontyourface",
+        "version": "3.2.0",
+        "version_normalized": "3.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/fontyourface",
+            "reference": "8.x-3.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/fontyourface-8.x-3.2.zip",
+            "reference": "8.x-3.2",
+            "shasum": "f509b3dc3e9849ca1cced5607a29d8319709c9ec"
+        },
+        "require": {
+            "drupal/core": "8.*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-3.x": "3.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-3.2",
+                "datestamp": "1517458980",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "BTMash",
+                "homepage": "https://www.drupal.org/user/60422"
+            },
+            {
+                "name": "BarisW",
+                "homepage": "https://www.drupal.org/user/107229"
+            },
+            {
+                "name": "Drave Robber",
+                "homepage": "https://www.drupal.org/user/984338"
+            },
+            {
+                "name": "sreynen",
+                "homepage": "https://www.drupal.org/user/109890"
+            }
+        ],
+        "description": "Web font management tools.",
+        "homepage": "https://www.drupal.org/project/fontyourface",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/fontyourface",
+            "issues": "https://drupal.org/project/issues/fontyourface"
+        }
+    },
+    {
+        "name": "drupal/geofield",
+        "version": "1.0.0-beta4",
+        "version_normalized": "1.0.0.0-beta4",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/geofield",
+            "reference": "8.x-1.0-beta4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.0-beta4.zip",
+            "reference": "8.x-1.0-beta4",
+            "shasum": "afc3006a891a83b79f44f8f62cac6322c83726e1"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "phayes/geophp": "^1.2"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta4",
+                "datestamp": "1520365980",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Brandon Morrison",
+                "homepage": "https://www.drupal.org/u/brandonian",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Pablo López",
+                "homepage": "https://www.drupal.org/u/plopesc",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Italo Mairo",
+                "homepage": "https://www.drupal.org/u/itamair",
+                "role": "Maintainer"
+            },
+            {
+                "name": "davidseth",
+                "homepage": "https://www.drupal.org/user/254857"
+            },
+            {
+                "name": "itamair",
+                "homepage": "https://www.drupal.org/user/1179076"
+            },
+            {
+                "name": "phayes",
+                "homepage": "https://www.drupal.org/user/47098"
+            },
+            {
+                "name": "plopesc",
+                "homepage": "https://www.drupal.org/user/282415"
+            },
+            {
+                "name": "zzolo",
+                "homepage": "https://www.drupal.org/user/147331"
+            }
+        ],
+        "description": "Stores geographic and location data (points, lines, and polygons).",
+        "homepage": "https://www.drupal.org/project/geofield",
+        "support": {
+            "source": "http://git.drupal.org/project/geofield.git",
+            "issues": "https://www.drupal.org/project/issues/geofield",
+            "irc": "irc://irc.freenode.org/drupal-contribute"
+        }
+    },
+    {
+        "name": "drupal/profile",
+        "version": "1.0.0-rc1",
+        "version_normalized": "1.0.0.0-RC1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/profile",
+            "reference": "8.x-1.0-rc1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.0-rc1.zip",
+            "reference": "8.x-1.0-rc1",
+            "shasum": "cc537ca25412adc4fa601ff42cf2fb5cbc6e7b6b"
+        },
+        "require": {
+            "drupal/core": "~8.1",
+            "drupal/entity": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-rc1",
+                "datestamp": "1505830324",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "RC releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "dakala",
+                "homepage": "https://www.drupal.org/user/53175"
+            },
+            {
+                "name": "fago",
+                "homepage": "https://www.drupal.org/user/16747"
+            },
+            {
+                "name": "mglaman",
+                "homepage": "https://www.drupal.org/user/2416470"
+            },
+            {
+                "name": "pcambra",
+                "homepage": "https://www.drupal.org/user/122101"
+            }
+        ],
+        "description": "Provides configurable user profiles.",
+        "homepage": "http://drupal.org/project/profile",
+        "support": {
+            "source": "http://cgit.drupalcode.org/profile"
+        }
+    },
+    {
+        "name": "drupal/simple_gmap",
+        "version": "1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/simple_gmap",
+            "reference": "8.x-1.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/simple_gmap-8.x-1.4.zip",
+            "reference": "8.x-1.4",
+            "shasum": "364d59f318052ab8094b25e52b43f7f7deda9259"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.4",
+                "datestamp": "1504630143",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "jhodgdon",
+                "homepage": "https://www.drupal.org/user/155601"
+            },
+            {
+                "name": "martin107",
+                "homepage": "https://www.drupal.org/user/2659379"
+            }
+        ],
+        "description": "Provides a Google Maps link/map formatter for simple Text fields.",
+        "homepage": "https://www.drupal.org/project/simple_gmap",
+        "support": {
+            "source": "http://cgit.drupalcode.org/simple_gmap"
         }
     }
 ]
