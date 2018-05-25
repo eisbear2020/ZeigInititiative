@@ -220,6 +220,10 @@ margin-bottom: 1em;
   background-color: #fcfcfc;
 }
 
+.alle-initiativen .view-content{
+  grid-template-rows:auto;
+}
+
 
 .alle-initiativen .views-col{padding-bottom:0.5em;}
 
