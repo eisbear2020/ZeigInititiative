@@ -81,7 +81,7 @@ class LinkViewsTokensTest extends ViewTestBase {
 
     foreach ($uris as $uri => $title) {
       // Formatted link: {{ field_link }}<br />
-      $this->assertRaw("Formated: <div class=\"link-item\"><div class=\"link-title\">$title</div><div class=\"link-url\"><a href=\"$uri\" class=\"test-link-class\">$uri</a></div></div>");
+      $this->assertRaw("Formated: <a href=\"$uri\" class=\"test-link-class\">$title</a>");
 
       // Raw uri: {{ field_link__uri }}<br />
       $this->assertRaw("Raw uri: $uri");
