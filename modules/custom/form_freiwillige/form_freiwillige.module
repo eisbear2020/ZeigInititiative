@@ -28,12 +28,37 @@ function form_freiwillige_form_node_freiwillige_form_alter(&$form, \Drupal\Core\
   //];
 }
 function callback_set_redirect($form, FormStateInterface $form_state) {
+  form_freiwillige_send_mail();
   $form_state->setRedirect('<front>');
   drupal_get_messages('status');
   //To override message
   drupal_set_message('Schön, dass Du dich engagieren willst! Wir werden uns bald bei dir melden.');
   return;
 }
+/**
+ *  Implements hook_mail()"
+ */
+function form_freiwillige_mail($key, &$message, $params) {
+ switch ($key) {
+   case 'new_volunteer':
+    $message['from'] = \Drupal::config('system.site')->get('mail');
+    $message['subject'] = t('Ein neuer Freiwilliger hat sich eingetragen');
+    $message['body'][] = t('Unter dem Link https://www.zeig-initiative.at/freiwillige_uebersicht kann der Freiwillige einer Initiative zugewiesen werden');
+     break;
+ }
+}
+/**
+ *  Send email to team
+ */
+function form_freiwillige_send_mail(){
+  $mailManager = \Drupal::service('plugin.manager.mail');
+  $module = ‘form_freiwillige’;
+  $key = 'new_volunteer';
+  $to = 'kontakt@zeig-initiative.at';
+  $send = true;
+  $result = $mailManager->mail($module, $key, $to, NULL, NULL, NULL, $send);
+}
+
 
 /**
  *  Node alter for "Freiwillige"
