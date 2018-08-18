@@ -46,7 +46,7 @@ function form_freiwillige_send_mail(){
   'content-type' => 'text/html',
   'MIME-Version' => '1.0',
   'reply-to' => $from,
-  'from' => 'sender name <'.$from.'>'
+  'from' => 'ZeigInitiative <'.$from.'>'
   );
   $message['to'] = $to;
   $message['subject'] = "Ein neuer Freiwilliger hat sich eingetragen";
