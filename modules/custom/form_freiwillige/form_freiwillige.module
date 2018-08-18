@@ -36,27 +36,24 @@ function callback_set_redirect($form, FormStateInterface $form_state) {
   return;
 }
 /**
- *  Implements hook_mail()"
- */
-function form_freiwillige_mail($key, &$message, $params) {
- switch ($key) {
-   case 'new_volunteer':
-    $message['from'] = \Drupal::config('system.site')->get('mail');
-    $message['subject'] = t('Ein neuer Freiwilliger hat sich eingetragen');
-    $message['body'][] = t('Unter dem Link https://www.zeig-initiative.at/freiwillige_uebersicht kann der Freiwillige einer Initiative zugewiesen werden');
-     break;
- }
-}
-/**
  *  Send email to team
  */
 function form_freiwillige_send_mail(){
-  $mailManager = \Drupal::service('plugin.manager.mail');
-  $module = ‘form_freiwillige’;
-  $key = 'new_volunteer';
+  $send_mail = new \Drupal\Core\Mail\Plugin\Mail\PhpMail(); // this is used to send HTML emails
+  $from = 'kontakt@zeig-initiative.at';
   $to = 'kontakt@zeig-initiative.at';
-  $send = true;
-  $result = $mailManager->mail($module, $key, $to, NULL, NULL, NULL, $send);
+  $message['headers'] = array(
+  'content-type' => 'text/html',
+  'MIME-Version' => '1.0',
+  'reply-to' => $from,
+  'from' => 'sender name <'.$from.'>'
+  );
+  $message['to'] = $to;
+  $message['subject'] = "Ein neuer Freiwilliger hat sich eingetragen";
+
+  $message['body'] = 'Unter dem Link https://www.zeig-initiative.at/freiwillige_uebersicht kann der Freiwillige einer Initiative zugewiesen werden.';
+
+  $send_mail->mail($message);
 }
 
 
