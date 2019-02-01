@@ -41,8 +41,8 @@ sites/simpletest
 # simpletest
 
 # Ignore core phpcs.xml and phpunit.xml.
-core/phpcs.xml
-core/phpunit.xml
+# core/phpcs.xml
+# core/phpunit.xml
 
 # Ignore tmp directory --> only for syncing
 tmp/
