@@ -1,5 +1,8 @@
-This is the Project "ZI"
+# ZeigInitiative
+## Project description
+Online matching platform for voluntary projects based on Drupal
 
+## Project structure
 Files/folders/components that are not included in the repository:
 
   - sites/default/settings.php
